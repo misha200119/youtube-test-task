@@ -1,0 +1,10 @@
+.video-card-preview {
+  transition: 0.3s all;
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+
+.video-card:hover .video-card-preview {
+  background-size: 120% 120%;
+  opacity: 1;
+}
