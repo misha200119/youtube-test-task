@@ -24,6 +24,7 @@ import { PaginationService } from './pagination/pagination.service';
         database: configService.get('DB_DATABASE'),
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         synchronize: configService.get('NODE_ENV') !== 'production',
+        ssl: true
       }),
       inject: [ConfigService],
     }),
