@@ -4,7 +4,7 @@ import { Video } from '../types/video.type';
 import { HistoryResponse } from '../types/history';
 
 export const api = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:7777' }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BACKEND_BASE_URL }),
   endpoints: (builder) => ({
     searchVideos: builder.query<SearchResponse<Video>, SearchParams>({
       query: (params) => ({
